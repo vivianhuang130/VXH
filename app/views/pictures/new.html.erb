@@ -1,0 +1,16 @@
+<h1>Pictures#new</h1>
+<p>Find me in app/views/pictures/new.html.erb</p>
+
+
+<div>
+  <%= form_for @picture do |f|%>
+  <%= f.label :url, 'url' %>
+  <%= f.file_field :url, placeholder: 'Upload Picture' %>
+  <%= f.label :caption, 'caption' %>
+  <%= f.text_field :caption, placeholder: 'Write a caption' %>
+  <%= f.label :tag, 'tag' %>
+  <%= f.text_field :tag, placeholder: 'Write a tag' %>
+  <%= f.submit 'Create Post' %>
+
+  <% end%>
+</div>

@@ -1,0 +1,35 @@
+<h1>Users Edit</h1>
+
+<!-- #make form -->
+
+
+  <%= form_for @user do |f| %>
+<div>
+  <div>
+    <br>
+    Enter your username here:
+    <br>
+    <%= f.text_field :name, placeholder:"Username.." %>
+  </div>
+
+  <div>
+    <br>
+    Enter your tagline here
+    <br>
+    <%= f.text_field :tagline, placeholder: "Tagline.." %>
+    <% f.submit 'Edit Tagline' %>
+    <% @user.tagline %>
+  </div>
+
+  <div>
+    <br>
+    Enter your bio here:
+    <br>
+    <%= f.text_field :bio, placeholder: "Bio.." %>
+    <% f.submit 'Edit Bio' %>
+    <% @user.bio %>
+  </div>
+
+    <%= f.submit 'Update' %>
+    <% end %>
+</div>

@@ -1,0 +1,18 @@
+<h1>Show view 2 </h1>
+<div>
+<%= @user.pic_url %>
+<br>
+<%= @user.name %>
+<br>
+<%= @user.tagline %>
+<br>
+<%= @user.bio %>
+<br>
+<%= link_to 'Edit', edit_user_path %>
+<%= link_to 'Delete', user_path, method: 'Delete', data: {confirm: 'Are you sure?'} %>
+</div>
+<% @user.pictures.each do |p| %>
+  <%= image_tag(p.url) %>
+  <h3><%= p.caption %></h3>
+  <br>
+<% end %>
