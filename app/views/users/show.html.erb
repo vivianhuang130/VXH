@@ -15,4 +15,8 @@
   <%= image_tag(p.url) %>
   <h3><%= p.caption %></h3>
   <br>
+
+  <%= link_to 'Edit', edit_user_picture_path(@user)%>
+  <%= link_to 'Delete', user_picture_path(@user), method: 'Delete', data: {confirm: 'Are you sure?'} %>
+
 <% end %>
