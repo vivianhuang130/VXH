@@ -1,3 +1,6 @@
+# VXH
+This app allows users to publish their photography.
+
 ## Technologies used
 This site uses the following Gemfiles with Ruby 2.3.1
 

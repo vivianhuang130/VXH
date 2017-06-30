@@ -1,9 +1,9 @@
-<h1>Collective Collaboration</h1>
+<h1 class="italic">Collective Collaboration</h1>
 <!-- <p>Find me in app/views/pictures/index.html.erb</p> -->
 <div class="middle">
 <% @pictures.reverse.each do |p| %>
   <%= image_tag(p.url) %>
-  <h3><%= p.caption %></h3>
+  <h3 class="caption-style"><%= p.caption %></h3>
   <br>
 <% end %>
 </div>
