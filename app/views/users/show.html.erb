@@ -21,11 +21,12 @@
   <% @user.pictures.reverse.each do |pic| %>
 
   <%= image_tag(pic.url) %>
-  <h3><%= pic.caption %></h3>
+  <h3 class="caption"><%= pic.caption %></h3>
   <br>
 
-  <%= link_to 'Edit', edit_user_picture_path(@user.id, pic)%>
-  <%= link_to 'Delete', user_picture_path(@user.id, pic), method: 'Delete', data: {confirm: 'Are you sure?'} %>
+    <%= link_to 'Edit', edit_user_picture_path(@user.id, pic), class: 'edit-delete'%>
+    <%= link_to 'Delete', user_picture_path(@user.id, pic), method: 'Delete', data: {confirm: 'Are you sure?'}, class: 'edit-delete' %>
+  </br>
 
   <% end %>
 </div>
