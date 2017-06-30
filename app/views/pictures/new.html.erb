@@ -3,7 +3,7 @@
 
 
 <div>
-  <%= form_for @picture do |f|%>
+  <%= form_for [@user, @picture] do |f|%>
   <%= f.label :url, 'url' %>
   <%= f.file_field :url, placeholder: 'Upload Picture' %>
   <%= f.label :caption, 'caption' %>
