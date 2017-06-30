@@ -1,31 +1,31 @@
-<h1>Show view 2 </h1>
-<div>
-<%= @user.pic_url %>
-<br>
-<%= @user.name %>
-<br>
-<%= @user.tagline %>
-<br>
-<%= @user.bio %>
-<br>
-<%= link_to 'Edit', edit_user_path %>
-</div>
-<div>
+<!-- <h1>Show view 2 </h1> -->
+
+<div class="middle">
+  <%= @user.pic_url %>
   <br>
-    <%= link_to 'Add Picture', new_user_picture_path(@user)%>
+  <p class="boldfont"><%= @user.name%></p>
+  <br>
+  <p class="tagline"><%= @user.tagline %></p>
+  <br>
+  <p class="bio"><%= @user.bio %></p>
+  <br>
+  <p class="edit"><%= link_to 'Edit', edit_user_path %></p>
+</div>
+
+<div class="middle">
+  <br>
+  <%= link_to 'Add Picture', new_user_picture_path(@user)%>
   <br>
 </div>
-<div>
+<div class="middle">
   <% @user.pictures.reverse.each do |pic| %>
 
-    <%= image_tag(pic.url) %>
-    <h3><%= pic.caption %></h3>
-    <br>
+  <%= image_tag(pic.url) %>
+  <h3><%= pic.caption %></h3>
+  <br>
 
-
-
-    <%= link_to 'Edit', edit_user_picture_path(@user.id, pic)%>
-    <%= link_to 'Delete', user_picture_path(@user.id, pic), method: 'Delete', data: {confirm: 'Are you sure?'} %>
+  <%= link_to 'Edit', edit_user_picture_path(@user.id, pic)%>
+  <%= link_to 'Delete', user_picture_path(@user.id, pic), method: 'Delete', data: {confirm: 'Are you sure?'} %>
 
   <% end %>
 </div>
