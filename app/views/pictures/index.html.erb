@@ -2,8 +2,9 @@
 <!-- <p>Find me in app/views/pictures/index.html.erb</p> -->
 <div class="middle">
 <% @pictures.reverse.each do |p| %>
+<div class="col-md-4">
   <%= image_tag(p.url) %>
   <h3 class="caption-style"><%= p.caption %></h3>
-  <br>
+</div>
 <% end %>
 </div>

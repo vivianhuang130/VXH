@@ -19,14 +19,14 @@
 </div>
 <div class="middle">
   <% @user.pictures.reverse.each do |pic| %>
-
+<div class="col-md-4">
   <%= image_tag(pic.url) %>
-  <h3 class="caption caption-style"><%= pic.caption %></h3>
-  <br>
-
+  <h3 class="edit-delete caption-style"><%= pic.caption %></h3>
+  <!-- <div class="edit-delete"> -->
     <%= link_to 'Edit', edit_user_picture_path(@user.id, pic), class: 'edit-delete ed-size'%>
     <%= link_to 'Delete', user_picture_path(@user.id, pic), method: 'Delete', data: {confirm: 'Are you sure?'}, class: 'edit-delete ed-size' %>
-  </br>
+  <!-- </div> -->
+</div>
 
   <% end %>
 </div>
