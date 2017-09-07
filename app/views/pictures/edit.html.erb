@@ -1,13 +1,15 @@
-<h1>Pictures#edit</h1>
-<p>Find me in app/views/pictures/edit.html.erb</p>
+<h1>Edit Memory</h1>
+<!-- <p>Find me in app/views/pictures/edit.html.erb</p> -->
 <div>
   <%= form_for [@user, @picture] do |f|%>
-    <%= f.label :url, 'url' %>
+    <%= f.label :url, 'Upload photo' %>
     <%= f.file_field :url, placeholder: 'Upload Picture' %>
-    <%= f.label :caption, 'caption' %>
+  <div id="div-space"></div>
+    <%= f.label :caption, 'Caption' %>
+  <div id="div-space2"></div>
     <%= f.text_field :caption, placeholder: 'Write a caption' %>
-    <%= f.label :tag, 'tag' %>
-    <%= f.text_field :tag, placeholder: 'Write a tag' %>
+    <!-- <%= f.label :tag, 'tag' %>
+    <%= f.text_field :tag, placeholder: 'Write a tag' %> -->
     <%= f.submit 'Create Post' %>
   <% end%>
 

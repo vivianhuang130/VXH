@@ -1,12 +1,16 @@
-<h1>Upload Picture</h1>
+<h1>Upload a memory</h1>
+<h3>“A good snapshot keeps a moment from running away.” -Eudora Welty</h3>
+
+
 <!-- <p>Find me in app/views/pictures/new.html.erb</p> -->
-
-
+<div id="div-space"></div>
 <div>
   <%= form_for [@user, @picture] do |f|%>
   <%= f.label :url, 'Upload Photo' %>
   <%= f.file_field :url, placeholder: 'Upload Picture' %>
-  <%= f.label :caption, 'Edit' %>
+<div id="div-space"></div>
+  <%= f.label :caption, 'Caption' %>
+<div id="div-space2"></div>
   <%= f.text_field :caption, placeholder: 'Write a caption' %>
   <!-- <%= f.label :tag, 'tag' %> -->
   <!-- <%= f.text_field :tag, placeholder: 'Write a tag' %> -->
