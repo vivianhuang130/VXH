@@ -1,6 +1,6 @@
 # VXH
 This app allows users to publish their photography.
-Try [VXH](https://vivianhuang130.github.io/VXH) out!
+Try [VXH] at https://vivianhuang130.github.io/VXH !
 
 ## Technologies used
 This site uses the following Gemfiles with Ruby 2.3.1
