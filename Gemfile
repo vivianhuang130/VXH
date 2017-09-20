@@ -10,6 +10,7 @@ gem 'dotenv-rails', group: :development, require: 'dotenv/rails-now'
 
 gem 'paperclip'
 gem 'aws-sdk'
+gem 'fog-aws'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
