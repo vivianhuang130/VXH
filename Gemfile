@@ -10,7 +10,7 @@ gem 'dotenv-rails', group: :development, require: 'dotenv/rails-now'
 
 gem 'paperclip'
 gem 'aws-sdk'
-
+gem 'rails_12factor', group: :production
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -27,6 +27,7 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'jquery-rails'
+
 
 
 # Use CoffeeScript for .coffee assets and views
